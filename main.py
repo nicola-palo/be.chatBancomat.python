@@ -99,7 +99,7 @@ async def process_card_unlock(card_number: str) -> str:
                 f"{BE_URL}/api/internal/unlock-card",
                 json={"cardNumber": card_number},
                 headers={"X-API-Key": BE_API_KEY},
-                timeout=10.0
+                timeout=60.0  # 60 secondi per gestire cold start di Render free tier
             )
             
             if response.status_code == 200:
