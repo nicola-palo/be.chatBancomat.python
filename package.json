@@ -1,0 +1,5 @@
+{
+  "name": "atm-chat-backend",
+  "version": "1.0.0",
+  "description": "Backend Python per chat AI con Google Gemini"
+}
